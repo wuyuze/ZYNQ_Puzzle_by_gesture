@@ -1,7 +1,7 @@
 
 The project is homework for course System on Chip(Soc) in HUST, term 2017 autumn. Finished in 2018.1.22.
 
-The project is created on DIGILENT Zedboard based  on AD7511 HDMI display project. 
+The project is created on DIGILENT Zedboard based  on ADV7511 HDMI display project. 
 
 ##The New Features:
 
@@ -14,7 +14,7 @@ The project is created on DIGILENT Zedboard based  on AD7511 HDMI display projec
 ##Other tips:
 
 1. Xilinx Vivado version is 2016.2
-2. Project AD7511 doesn't work in version 2016.2. To be compatible, Xilinx C/C++ Complier Build Setting is changed. GCC Complier->Miscellaneous->**-mfloat-abi=hard** is changed by **-mfloat-abi=softfp**, so as GCC Linker
+2. Project ADV7511 doesn't work in version 2016.2. To be compatible, Xilinx C/C++ Complier Build Setting is changed. GCC Complier->Miscellaneous->**-mfloat-abi=hard** is changed by **-mfloat-abi=softfp**, so as GCC Linker
 3. Each time you export hardware from Vivado to SDK, the bsp file is built again. As bsp file is new, Makefile need being updated. Use **mfloat-abi=softfp** replace **mfloat-abi=hard** at two places.
 
 
